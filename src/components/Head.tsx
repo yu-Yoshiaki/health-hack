@@ -7,17 +7,18 @@ export type MetaData = {
   image?: string;
 };
 
-const defaultUrl = "https://tensakukun.vercel.com";
-const defaultTitle = "添削くん | 英語で自分の意見を言えるようになるサービス";
-const defaultDescription =
-  "翻訳AIを使った英作アプリで、日本人が苦手な「自分の意見を英語で言う」力が身につく";
+const defaultData = {
+  url: "",
+  title: "",
+  description: "",
+};
 
 export const CustomHead = (props: MetaData) => {
-  const title = props.title ? `${props.title} | ${defaultTitle}` : defaultTitle;
-  const description = props.description
-    ? props.description
-    : defaultDescription;
-  const url = props.pagePath ? `https://tensakukun.vercel.com` : defaultUrl;
+  const title = props.title
+    ? `${props.title} | ${defaultData.title}`
+    : defaultData.title;
+  const description = props.description ?? defaultData.description;
+  const url = props.pagePath ?? defaultData.url;
   //   const imgUrl = props.image ? `https://tensakukun.vercel.com` : defaultImg;
 
   return (

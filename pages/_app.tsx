@@ -8,7 +8,7 @@ const App = (props: CustomAppProps) => {
   return (
     <div>
       <Toaster />
-      <main>
+      <main className="text-gray-700">
         <props.Component {...props.pageProps} />
       </main>
     </div>

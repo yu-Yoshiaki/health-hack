@@ -184,15 +184,15 @@ const Contact = () => {
 export const Index = () => {
   return (
     <Layout>
-      <div className="space-y-10 py-20 px-5">
-        <h2 className="mb-20 text-center text-3xl font-semibold">
-          AIを使ってかんたんに英語力が身に付く
-        </h2>
-        <Translation />
+      {/* <div className="space-y-10 py-20 px-5"> */}
+      <h2 className="mb-20 text-center text-3xl font-semibold">
+        AIを使ってかんたんに英語力が身に付く
+      </h2>
+      {/* <Translation />
         <Description />
         <Howto />
         <Contact />
-      </div>
+      </div> */}
     </Layout>
   );
 };

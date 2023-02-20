@@ -1,7 +1,7 @@
-import { Index } from "src/pages";
+import { Home } from "src/pages/Home";
 
 const IndexPage = () => {
-  return <Index />;
+  return <Home />;
 };
 
 export default IndexPage;
